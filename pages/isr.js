@@ -1,5 +1,3 @@
-
-
 export async function getStaticProps() {
   const res = await fetch("https://dog-api.kinduff.com/api/facts");
 
@@ -9,7 +7,7 @@ export async function getStaticProps() {
     props: {
       facts,
     },
-    revalidate: 10,
+    revalidate: 3,
   };
 }
 
